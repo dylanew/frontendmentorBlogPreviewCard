@@ -22,7 +22,9 @@
       background-color: hsl(47, 88%, 63%);
       display: flex;
       justify-content: center;
-      align-items: center; 
+      align-items: center;
+      height: 100vh;
+      padding: 1rem;
     }
     .highlighted {
       background-color: hsl(47, 88%, 63%);
@@ -31,14 +33,49 @@
     }
     .preview-card {
       background-color: hsl(0, 0%, 100%);
+      text-align: left;
       padding: 1rem;
       border-radius: 20px;
       width: 320px;
-      text-align: center;
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
     }
     .preview-card img {
       width: 100%;
+    }
+    .preview-card h1{
+      font-size: 20px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .preview-card h1:hover {
+      color: hsl(47, 88%, 63%);
+    }
+    .preview-card p {
+      font-size: 16px;
+      color: hsl(0, 0%, 42%);
+      line-height: 1.5;
+    }
+    .highlighted {
+      font-weight: 800;
+      font-size: 12px;
+      display: inline-block;
+      margin: 1rem 0 0.5rem 0;
+    }
+    .author-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+    .author-section img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+    .author-section h4 {
+      font-size: 14px;
+      font-weight: 800;
+      margin: 0;
     }
   </style>
 </head>
@@ -47,12 +84,15 @@
     <img src="./assets/images/illustration-article.svg">
     <span class="highlighted">Learning</span>
 
-    Published 21 Dec 2023
+    <p>Published 21 Dec 2023</p>
 
     <h1>HTML & CSS foundations</h1>
     <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
 
-    <h4>Greg Hooper</h4>
+    <div class="author-section">
+      <img src="./assets/images/image-avatar.webp">
+      <h4>Greg Hooper</h4>
+    </div>
 
   </div>
   
